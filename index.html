@@ -14,16 +14,23 @@
 
     <div class="container">
         <div class="row">
-            <button class="btn btn-primary" onclick="getGeoCode()"> search </button>
+            <button class="btn btn-primary" onclick="addFavorite()"> add favorites </button>
             <button class="btn btn-primary" onclick="getLocation()"> get map </button>
-
+            <button class="btn btn-primary" onclick="fs()"> full screen </button>
             <input class="input-group" id="search-input" type="text">
+        </div>
+        <div class="row" id="tags">
+
         </div>
 
         <div class="row">
             <div id="currentMap" style="width:100%;height:90vh;"></div>
         </div>
 
+        <div>
+            <img id="myimage" src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350"
+                alt="" srcset="">
+        </div>
     </div>
 
 
@@ -33,7 +40,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATDmwx76223-3qe973E3DlNmAOVnYixzQ&callback=getLocation"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATDmwx76223-3qe973E3DlNmAOVnYixzQ"></script>
     <script src="index.js"></script>
 </body>
 
